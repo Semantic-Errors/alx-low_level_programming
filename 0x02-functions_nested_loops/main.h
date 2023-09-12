@@ -2,5 +2,6 @@
 #define ALX_0X02_FUNCTIONS_NESTED_LOOPS_MAIN_H_
 
 int _putchar(char c);
+void print_alphabet(void);
 
 #endif /* ALX_0X02_FUNCTIONS_NESTED_LOOPS_MAIN_H_ */

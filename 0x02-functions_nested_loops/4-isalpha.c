@@ -11,8 +11,8 @@
 
 int _isalpha(int c)
 {
-    int is_lower_char = ('a' <= c && c <= 'z');
-    int is_upper_char = ('A' <= c && c <= 'Z');
+	int is_lower_char = ('a' <= c && c <= 'z');
+	int is_upper_char = ('A' <= c && c <= 'Z');
 
-    return (is_lower_char || is_upper_char);
+	return (is_lower_char || is_upper_char);
 }

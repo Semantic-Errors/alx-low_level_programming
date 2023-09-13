@@ -11,5 +11,6 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
+void times_table(void);
 
 #endif /* ALX_0X02_FUNCTIONS_NESTED_LOOPS_MAIN_H_ */

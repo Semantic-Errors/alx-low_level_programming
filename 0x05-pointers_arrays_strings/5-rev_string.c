@@ -15,9 +15,9 @@ void rev_string(char *s)
 	while (*reversed_index_of_s != '\0')
 		reversed_index_of_s++;
 
-	while (s <= reversed_index_of_s)
+	while (s <= (--reversed_index_of_s))
 	{
-		char temp = *(--reversed_index_of_s);
+		char temp = *reversed_index_of_s;
 
 		*reversed_index_of_s = *s;
 		*s = temp;

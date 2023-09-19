@@ -7,5 +7,6 @@ void swap_int(int *a, int *b);
 int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
+void rev_string(char *s);
 
 #endif /* ALX_0X05_POINTERS_ARRAYS_STRINGS_MAIN_H_ */

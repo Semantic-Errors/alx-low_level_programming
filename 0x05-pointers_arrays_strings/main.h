@@ -10,5 +10,6 @@ void print_rev(char *s);
 void rev_string(char *s);
 void puts2(char *str);
 void puts_half(char *str);
+void print_array(int *a, int n);
 
 #endif /* ALX_0X05_POINTERS_ARRAYS_STRINGS_MAIN_H_ */

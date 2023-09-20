@@ -28,7 +28,7 @@ int sizeofstring(char *s)
 
 void puts_half(char *str)
 {
-	int index = (sizeofstring(str)) / 2;
+	int index = (sizeofstring(str) + 1) / 2;
 
 	for (; str[index] != '\0'; index++)
 		_putchar(str[index]);

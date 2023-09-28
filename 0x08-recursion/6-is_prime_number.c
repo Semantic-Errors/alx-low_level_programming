@@ -36,5 +36,5 @@ int is_prime_number(int n)
 	if (n < 0)
 		n *= -1;
 
-	return (check_devisors(n, 2));
+	return (check_for_devisors(n, 2));
 }

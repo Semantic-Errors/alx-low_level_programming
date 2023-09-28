@@ -12,7 +12,7 @@
 
 int check_for_devisors(int number, int devisor)
 {
-	if (number % devisor == 0 || number == 1)
+	if (number % devisor == 0 || number <= 1)
 		return (0);
 
 	if (devisor * devisor > number)
@@ -33,8 +33,5 @@ int check_for_devisors(int number, int devisor)
 
 int is_prime_number(int n)
 {
-	if (n < 0)
-		n *= -1;
-
 	return (check_for_devisors(n, 2));
 }

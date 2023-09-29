@@ -47,5 +47,5 @@ int is_palindrome_str(char *s, int begin, int end)
 
 int is_palindrome(char *s)
 {
-	return is_palindrome_str(s, 0, _strlen(s) - 1);
+	return (is_palindrome_str(s, 0, _strlen(s) - 1));
 }

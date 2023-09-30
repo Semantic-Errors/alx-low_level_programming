@@ -124,7 +124,7 @@ int wildcmp(char *s1, char *s2)
 	int **dp = (int **)malloc(n * sizeof(int *));
 
 	malloc_dp(dp, n, m, 0);
-	intialize_dp(dp,n, m, 0, 0);
+	intialize_dp(dp, n, m, 0, 0);
 
 	return (is_string_matching(s2, s1, n - 1, m - 1, dp));
 }

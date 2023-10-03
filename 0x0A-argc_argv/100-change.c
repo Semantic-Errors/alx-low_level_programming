@@ -30,10 +30,13 @@ int main(int argc, char **argv)
 
 	money = atoi(argv[argc - 1]);
 
-	for (i = 0; i < COINSCOUNT; i++)
+	if (money > 0)
 	{
-		minimum_coins += money / coins_values[i];
-		money %= coins_values[i];
+		for (i = 0; i < COINSCOUNT; i++)
+		{
+			minimum_coins += money / coins_values[i];
+			money %= coins_values[i];
+		}
 	}
 
 	printf("%d\n", minimum_coins);

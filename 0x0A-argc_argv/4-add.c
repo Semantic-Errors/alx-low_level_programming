@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 	{
 		if (!isnumber(argv[--argc], &sum_of_args))
 		{
-			puts("ERROR");
+			puts("Error");
 			exit(EXIT_FAILURE);
 		}
 	}

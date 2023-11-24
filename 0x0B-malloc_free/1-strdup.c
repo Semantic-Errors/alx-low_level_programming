@@ -13,7 +13,7 @@ unsigned int str_len(char *str)
 	unsigned int size = 0;
 
 	if (str == NULL)
-		return (0);
+		return (-1);
 
 	while (str[size] != '\0')
 		size++;
@@ -38,7 +38,7 @@ char *_strdup(char *str)
 
 	size = str_len(str);
 
-	if (size == 0)
+	if (size == -1)
 		return (NULL);
 
 	new_str = malloc((size + 1) * sizeof(char));

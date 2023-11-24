@@ -8,7 +8,7 @@
  * Return: the size of the string or 0 if string is empty or NULL
  */
 
-unsigned int str_len(char *str)
+int str_len(char *str)
 {
 	unsigned int size = 0;
 
@@ -33,8 +33,8 @@ unsigned int str_len(char *str)
 
 char *_strdup(char *str)
 {
+	int i, size;
 	char *new_str;
-	unsigned int i, size;
 
 	size = str_len(str);
 

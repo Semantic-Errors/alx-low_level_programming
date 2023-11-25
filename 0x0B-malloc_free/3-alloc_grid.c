@@ -9,7 +9,7 @@
  * Return: Always NULL
  */
 
-void *free_grid(int **grid, int row)
+void *_free_grid(int **grid, int row)
 {
 	while ((--row) >= 0)
 		free(*(grid + row));
@@ -65,7 +65,7 @@ int **alloc_grid(int width, int height)
 		*(grid + i) = malloc(width * sizeof(int));
 
 		if (*(grid + i) == NULL)
-			return (free_grid(grid, i));
+			return (_free_grid(grid, i));
 	}
 
 

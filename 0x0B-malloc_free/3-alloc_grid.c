@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * free_grid - function that frees a given grid
+ * _free_grid - function that frees a given grid
  *
  * @grid: the address of the two dimensional grid
  * @row: the index of row to start free from it

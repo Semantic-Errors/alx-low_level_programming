@@ -14,9 +14,9 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
 	void *block;
-	
+	unsigned int i;
+
 	if (!nmemb || !size)
 		return (NULL);
 

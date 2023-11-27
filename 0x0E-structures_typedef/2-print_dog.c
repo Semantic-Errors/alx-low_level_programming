@@ -6,7 +6,7 @@
 /**
  * print_dog - function that prints a struct dog
  *
- * @d - pointer to the dog struct
+ * @d: pointer to the dog struct
  *
  * Return: Nothing
  */

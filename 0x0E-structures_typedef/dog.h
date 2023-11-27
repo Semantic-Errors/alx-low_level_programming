@@ -1,5 +1,6 @@
 #ifndef ALX_0X0E_STRUCTURES_TYPEDEF_DOG_H_
 #define ALX_0X0E_STRUCTURES_TYPEDEF_DOG_H_
+#include <stdlib.h>
 
 /**
  * struct dog - stores data about the dog

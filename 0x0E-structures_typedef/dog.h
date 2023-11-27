@@ -17,5 +17,5 @@ typedef struct dog
 } dog;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
-
+void print_dog(struct dog *d);
 #endif /* ALX_0X0E_STRUCTURES_TYPEDEF_DOG_H_ */

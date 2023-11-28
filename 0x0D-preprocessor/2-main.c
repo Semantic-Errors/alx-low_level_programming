@@ -7,7 +7,7 @@
  * Return: Norhing
  */
 
-int main()
+int main(void)
 {
 	printf("%s\n", __FILE__);
 

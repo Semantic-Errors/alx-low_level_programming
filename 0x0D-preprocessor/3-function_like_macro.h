@@ -1,0 +1,7 @@
+#ifndef ALX_0X0D_PREPROCESSOR_FUNCTION_LIKE_MACRO_H_
+#define ALX_0X0D_PREPROCESSOR_FUNCTION_LIKE_MACRO_H_
+
+#define ABS(x) ((x) < 0 ? (x * -1) : (x))
+
+#endif /* ALX_0X0D_PREPROCESSOR_ */
+

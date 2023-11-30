@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	if ((operator == '/' || operator == '%') && !number_two)
+	if ((*operator == '/' || *operator == '%') && !number_two)
 	{
 		puts("Error");
 		exit(100);

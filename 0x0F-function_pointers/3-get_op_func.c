@@ -24,24 +24,5 @@ int (*get_op_func(char *s))(int, int)
 		if (!(strcmp(ops[i++].op, s)))
 			return (ops[--i].f);
 
-	printf("Error\n");
-	exit(99);
-}
-
-/**
- * calculate - wrapper function
- *
- * @a: first number
- * @b: second number
- * @op: the operator
- *
- * Return: Nothing
-*/
-
-void calculate(int a, char *op, int b)
-{
-	int (*op_fun)(int, int) = get_op_func(op);
-	int result = op_fun(a, b);
-
-	printf("%d\n", result);
+	return (NULL);
 }

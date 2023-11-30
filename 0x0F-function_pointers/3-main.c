@@ -17,8 +17,9 @@
 
 int main(int argc, char **argv)
 {
-	int number_one,  number_two;
-	char *operation;
+	int number_one,  number_two, res;
+	char *operator;
+	int (*op_fun)();
 
 	if (argc != ARGS_COUNT)
 	{
@@ -28,9 +29,24 @@ int main(int argc, char **argv)
 
 	number_one = atoi(argv[1]);
 	number_two = atoi(argv[3]);
-	operation = argv[2];
+	operator = argv[2];
 
-	calculate(number_one, operation, number_two);
+	op_fun = get_op_func(operator);
+
+	if (op_fun == NULL)
+	{
+		puts("Error");
+		exit(99);
+	}
+
+	if ((operator == '/' || operator == '%') && !number_two)
+	{
+		puts("Error");
+		exit(100);
+	}
+
+	res = op_fun(number_one, number_two);
+	printf("%d\n", res);
 
 	return (EXIT_SUCCESS);
 }
